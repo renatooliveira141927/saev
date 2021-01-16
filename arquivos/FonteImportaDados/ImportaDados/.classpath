@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/dom4j-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/postgresql-9.0-801.jdbc4.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/stax-api-1.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/poi-4.1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/poi-ooxml-4.1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/poi-ooxml-schemas-4.1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/xmlbeans-3.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/commons-codec-1.13.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/commons-collections4-4.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/commons-compress-1.19.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/commons-math3-3.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/curvesapi-1.06.jar"/>
+	<classpathentry exported="true" kind="lib" path="bibliotecas/SparseBitSet-1.2.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

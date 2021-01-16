@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://sige.seduc.ce.gov.br/main.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>SIGEESCOLA - SISTEMA INTEGRADO DE GESTÃO ESCOLAR</title>
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">-->
+
+    <script src="./template modelo sige_files/bootstrap.min.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./template modelo sige_files/style.css">
+
+
+<style>
+    body{font-family: 'Roboto Condensed', sans-serif !important;  -webkit-font-smoothing: antialiased; margin: 0; padding: 0}
+    body h1{margin: 0; padding: 0}
+    hr{border: 1px solid #eaeaea}
+    .container{ max-width: 920px; margin: 0px auto; }
+    .col-md-3{float: left;}
+    .hidden{ display: none;}
+    #topo{ background: #eeeeee}
+    #conteudo{background: #fff; text-align: center;}
+    #conteudo #cabecalho{background: url("assets/img/bg_topo.jpg") repeat-x; min-height: 118px; text-align: center; }
+    #logo{ max-width: 593px; margin: 0px auto}
+    #conteudo #cabecalho{padding-top: 20px;}
+    #conteudo #content{ margin: 20px 0px; text-align: center;}
+    #conteudo a.item{ text-decoration: none; width: 160px; height: 195px; display: block; margin: 0px 35px; }
+    #conteudo .item .centraliza{width: 120px; margin: 0 auto;}
+    #conteudo .item .circulo{ background-color: #3baa72; width: 120px; height: 120px; display: table-cell;  vertical-align: middle; border-radius: 80px; 	-moz-border-radius: 80px;  -webkit-border-radius: 80px;}
+    #conteudo .item .titulo{ color: #3baa72; width: 150px; margin: 0px auto; margin-top: 10px; }
+    #conteudo .item .seta{ background:url("assets/img/seta.jpg") no-repeat; background-position: bottom center; position: absolute; width: 18px; height: 10px; margin-left: 65px; margin-top: -8px;}
+    #conteudo .item .borda{ background: #FFF; border: 1px solid #9dd4b8; padding: 5px; border-radius: 8px; 	-moz-border-radius: 8px;  -webkit-border-radius: 8px; }
+    #conteudo a.item:hover .circulo{ background-color: #f0bd1f;}
+    #conteudo a.item:hover .borda{ background-color: #ef8d1a;  border:1px solid #ef8d1a; color: #FFF}
+    #conteudo a.item:hover .seta{background:url("img/seta_hover.jpg");}
+    #conteudo #footer{background: url("assets/img/bg_rodape.jpg") #3bab73 repeat-x; color: #FFF; padding: 20px 0px;  text-transform: uppercase; color: #e1f0e7; font-size:14px; }
+    #rodape{background: #369a68}
+</style></head>
+
+
+
+<body>
+<!-- FORM Acesso -->
+<!-- Campo fornece o CÓDIGO do Módulo que será acessado -->
+<form name="frmAcesso" method="post" target="mainFrame">
+    <input type="hidden" name="nrAcesso">
+    <input type="hidden" name="professor" value="N">
+</form>
+
+<div class="container-fuid" id="topo" style="height: 0px;">
+</div>
+
+<div class="container-fuid" id="conteudo">
+    <div id="cabecalho">
+        <div id="logo">
+            <img src="./template modelo sige_files/logo.png" class="logo_maior" width="90" height="90">
+
+            <img src="./template modelo sige_files/logo_gov.png" class="logo_xs" width="210" height="60">
+
+            <div class="logo_menor hidden">
+                <img src="./template modelo sige_files/logo_gov.png">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="content">
+            <div class="row">
+                <!-- Botão Academico -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="http://sige.seduc.ce.gov.br/main.html#" class="item" alt="Sistema de Matrícula" onclick="Acesso(1);" style="margin-left: 35px; margin-right: 35px;">
+                        <div class="centraliza">
+                            <div class="circulo">
+                                <img src="./template modelo sige_files/icone_academico.png" width="110" height="110" border="0">
+                            </div>
+                        </div>
+
+                        <div class="titulo">
+                            <div class="seta">&nbsp;</div>
+                            <div class="borda">
+                                <span>ALUNO</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+				
+				<!-- Botão ENEM -->				
+				<div class="col-md-3 col-xs-6">
+                    <a href="http://enem.seduc.ce.gov.br/" class="item" target="_parent" style="margin-left: 35px; margin-right: 35px;">
+                        <div class="centraliza">
+                            <div class="circulo">
+                                <img src="./template modelo sige_files/icon_enem.png" width="80" height="80" border="0">
+                            </div>
+                        </div>
+
+                        <div class="titulo">
+                            <div class="seta">&nbsp;</div>
+                            <div class="borda">
+                                <span>AVALIAÇÃO</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+				
+				<!-- Botão Professor -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="http://professor.seduc.ce.gov.br/" class="item" target="_parent" style="margin-left: 35px; margin-right: 35px;">
+                        <div class="centraliza">
+                            <div class="circulo">
+                                <img src="./template modelo sige_files/icone_professoronline.png" width="90" height="90" border="0">
+                            </div>
+                        </div>
+
+                        <div class="titulo">
+                            <div class="seta">&nbsp;</div>
+                            <div class="borda">
+                                <span>PROFESSOR</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Botão Aluno -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="http://aluno.seduc.ce.gov.br/" class="item" target="_parent" style="margin-left: 35px; margin-right: 35px;">
+                        <div class="centraliza">
+                            <div class="circulo">
+                                <img src="./template modelo sige_files/icone_alunoonline.png" width="110" height="110" border="0">
+                            </div>
+                        </div>
+
+                        <div class="titulo">
+                            <div class="seta">&nbsp;</div>
+                            <div class="borda">
+                                <span>TURMA</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <br clear="all">
+
+    <div id="footer">
+        <strong>Governo do Estado do Ceará </strong><br> Av. Gen. Afonso Albuquerque, s/n - Bairro Cambeba - CEP: 60.839-90 - Fortaleza - Ceará<br> Desenvolvido por Secretaria da Educação do Ceará / <abbr title="Assessoria de Tecnologia da Informação"><strong>ASTIN</strong></abbr>
+    </div>
+</div>
+
+<div class="container-fuid" id="rodape" style="height: 0px;">
+</div>
+
+
+<script type="text/javascript">
+    $(function(){
+        $(window).resize();
+    })
+
+    $(window).resize(function(){
+
+        var $topo = $('#topo');
+        var $item = $('a.item');
+        var $rodape = $('#rodape');
+        var $conteudo = $('#conteudo');
+        var alturajanela = $(window).height();
+
+        var $logo_xs = $('.logo_xs');
+        var $logo_maior = $('.logo_maior');
+        var $logo_menor = $('.logo_menor');
+
+        var largurajanela = $(window).width();
+        var bordas = (alturajanela - $conteudo.height())/2;
+
+        if(largurajanela < 460) {
+            $item.css('margin-left', 20);
+            $item.css('margin-right', 20);
+            $logo_xs.removeClass('hidden');
+            $logo_menor.removeClass('hidden');
+            $logo_maior.addClass('hidden');
+
+            if(largurajanela < 400) {
+                $item.css('margin-left', 10);
+                $item.css('margin-right', 10);
+            }
+            if(largurajanela < 360) {
+                $item.css('margin-left', 0);
+                $item.css('margin-right', 0);
+            }
+        }else{
+            $item.css('margin-left', 35);
+            $item.css('margin-right', 35);
+            $logo_xs.addClass('hidden');
+            $logo_menor.addClass('hidden');
+            $logo_maior.removeClass('hidden');
+        }
+
+        //$topo.html(largurajanela);
+        $topo.css('height', bordas);
+        $rodape.css('height', bordas);
+    })
+</script>
+
+</body></html>

@@ -1,0 +1,17 @@
+.submit-lente {
+  position:absolute;
+  top:0; right:0;
+  z-index:10;
+  border:none;
+  background:transparent;
+  outline:none;
+}
+
+.submit-line {
+  position: relative;
+  width: 200px;
+}
+
+.submit-line input {
+  width: 100%;
+}
